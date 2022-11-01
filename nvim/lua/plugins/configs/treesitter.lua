@@ -1,8 +1,6 @@
 local treesitter = require("nvim-treesitter.configs")
 
--- See: https://github.com/nvim-treesitter/nvim-treesitter#modules
 treesitter.setup({
-  -- See: https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
   ensure_installed = {
     "css",
     "dockerfile",

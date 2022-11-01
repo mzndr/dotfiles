@@ -12,8 +12,8 @@ set.ignorecase = true
 set.smartcase  = true
 set.wrap = false
 set.expandtab = true
-set.cursorline = true
 set.autoread = true
+set.rnu = true
 
 set.history = 1000
 set.conceallevel = 0
