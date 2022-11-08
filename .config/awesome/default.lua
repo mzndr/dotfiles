@@ -22,7 +22,7 @@ require("awful.hotkeys_popup.keys")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init("~/.config/awesome/themes/my-theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
@@ -55,7 +55,7 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.se,
 }
 -- }}}
-beautiful.useless_gap = 5
+beautiful.useless_gap = 9
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
