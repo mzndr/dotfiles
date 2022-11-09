@@ -1,3 +1,9 @@
+dconf/
+.mono/
+Thunar/
 discord/
+htop/
+pulse/
 xfce4/
-awesome/themes/
+*.png
+*.jpg

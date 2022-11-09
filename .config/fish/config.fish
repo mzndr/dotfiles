@@ -1,8 +1,7 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    xinit
+  if not pgrep -f xinit > /dev/null
+    command xinit
+  end
 end
 
-if [ -z "{DISPLAY}" ] and [ "{XDG_VTNR}" -eq 1 ]; then
-  exec startx
-end
+source ./zoxide.fish

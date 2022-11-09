@@ -55,7 +55,7 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.se,
 }
 -- }}}
-beautiful.useless_gap = 9
+beautiful.useless_gap = 4
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
