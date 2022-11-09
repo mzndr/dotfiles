@@ -4,4 +4,4 @@ if status is-interactive
   end
 end
 
-source ./zoxide.fish
+source $HOME/.config/fish/zoxide.fish
