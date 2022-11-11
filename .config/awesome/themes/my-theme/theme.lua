@@ -25,9 +25,9 @@ theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
+theme.border_width  = dpi(50)
+theme.border_normal = "#212848"
+theme.border_focus = "#212848"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
@@ -97,7 +97,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."my-theme/titleba
 theme.titlebar_maximized_button_normal_active = themes_path.."my-theme/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."my-theme/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "~/Pictures/Wallpaper/Cyberpunk/a4113eabd3c78f2f.jpg"
+theme.wallpaper = "~/Pictures/pixelarts/redish/2.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."my-theme/layouts/fairhw.png"

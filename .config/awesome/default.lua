@@ -55,7 +55,7 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.se,
 }
 -- }}}
-beautiful.useless_gap = 4
+beautiful.useless_gap = 9
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
@@ -173,24 +173,25 @@ awful.screen.connect_for_each_screen(function(s)
     -- }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ 
+      height = 32,
+      opacity = 0.7,
+      position = "top", 
+      screen = s 
+    })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            mylauncher,
             s.mytaglist,
-            s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
-            wibox.widget.systray(),
             mytextclock,
-            s.mylayoutbox,
+            -- s.mylayoutbox,
         },
     }
 end)
@@ -416,17 +417,17 @@ clientbuttons = gears.table.join(
 
 -- Set keys
 root.keys(globalkeys)
--- }}}
+-- }}}defadefa
 
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
-      properties = { border_width = 0,
+      properties = { border_width = 8,
                      border_color = 0,
                      focus = awful.client.focus.filter,
-                     raise = true,
+                     raise = false,
                      keys = clientkeys,
                      buttons = clientbuttons,
                      screen = awful.screen.preferred,
