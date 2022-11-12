@@ -7,6 +7,7 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/" 
+local bg_image = "~/Pictures/pixelarts/1.jpg";
 
 local theme = {}
 
@@ -96,7 +97,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."my-theme/titleba
 theme.titlebar_maximized_button_normal_active = themes_path.."my-theme/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."my-theme/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "~/Pictures/pixelarts/4.jpg"
+theme.wallpaper = bg_image
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."my-theme/layouts/fairhw.png"
