@@ -26,9 +26,14 @@ packer.startup(function(use)
     config = function() require('plugins/configs/highlightedyank') end,
   })
 
+  -- use ({
+  --   'folke/tokyonight.nvim',
+  --   config = function() require('plugins/configs/tokyonight') end,
+  -- })
+
   use ({
-    'folke/tokyonight.nvim',
-    config = function() require('plugins/configs/tokyonight') end,
+    'rebelot/kanagawa.nvim',
+    config = function() require('plugins/configs/kanagawa') end,
   })
 
   use ({
