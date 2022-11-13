@@ -5,6 +5,9 @@ if status is-interactive
 end
 
 source $HOME/.config/fish/zoxide.fish
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export EDITOR=nvim
 
 abbr -a ls  "exa"
 abbr -a ll  "exa -la --git"

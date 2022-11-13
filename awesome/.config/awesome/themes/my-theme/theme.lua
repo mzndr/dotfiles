@@ -1,5 +1,5 @@
 ---------------------------
--- Default awesome theme --
+-- Marius awesome theme --
 ---------------------------
 
 local theme_assets = require("beautiful.theme_assets")
@@ -7,19 +7,30 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/" 
-local bg_image = "~/Pictures/pixelarts/1.jpg";
+local wallpapers = {
+  "~/Pictures/pixelarts/1.jpg",
+  "~/Pictures/pixelarts/2.jpg",
+  "~/Pictures/pixelarts/2.png",
+  "~/Pictures/pixelarts/3.jpg",
+  "~/Pictures/pixelarts/4.jpg",
+  "~/Pictures/pixelarts/5.jpg",
+  "~/Pictures/pixelarts/6.jpg",
+  "~/Pictures/pixelarts/7.jpg",
+  "~/Pictures/pixelarts/8.jpg",
+}
+local bg_image = wallpapers[1];
 
 local theme = {}
 
 theme.font          = "sans 10"
 
-theme.bg_normal     = "#212848"
+theme.bg_normal     = "#3F3F58"
 theme.bg_focus      = "#535d6c"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
+theme.fg_normal     = "#DCD7BA"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
