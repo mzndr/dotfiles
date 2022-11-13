@@ -6,6 +6,7 @@ end
 
 source $HOME/.config/fish/zoxide.fish
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/scripts:$PATH"
 
 export EDITOR=nvim
 
