@@ -1,6 +1,6 @@
 if status is-interactive
   if not pgrep -f xinit > /dev/null
-    command xinit
+    command startx
   end
 end
 
@@ -14,5 +14,6 @@ abbr -a ls  "exa"
 abbr -a ll  "exa -la --git"
 abbr -a cat "bat"
 abbr -a q   "exit"
+abbr -a dcup "docker compose up && docker compose logs -f"
 
 fish_vi_key_bindings
