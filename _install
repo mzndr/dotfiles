@@ -1,6 +1,7 @@
 #!/bin/sh
 pushd "$HOME/dotfiles"
 
+stow -S nvim
 stow -S kitty
 stow -S fish
 stow -S tmux
