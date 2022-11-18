@@ -2,7 +2,8 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_cat:bat
-SETUVAR _fish_abbr_dcup:docker\x20compose\x20up\x20\x26\x26\x20docker\x20compose\x20logs\x20\x2df
+SETUVAR _fish_abbr_dc:docker\x20compose
+SETUVAR _fish_abbr_dcup:docker\x20compose\x20up\x20\x2dd\x20\x26\x26\x20docker\x20compose\x20logs\x20\x2df
 SETUVAR _fish_abbr_ll:exa\x20\x2dla\x20\x2d\x2dgit
 SETUVAR _fish_abbr_ls:exa
 SETUVAR _fish_abbr_q:exit
