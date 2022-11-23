@@ -72,6 +72,7 @@ packer.startup(function(use)
 
   use({
     'nvim-treesitter/nvim-treesitter',
+    config = function() require('plugins/configs/treesitter') end,
   })
 
   use({
