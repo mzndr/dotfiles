@@ -10,6 +10,7 @@ stow -S git
 
 stow -S awesome
 stow -S picom
+stow -S polybar
 
 popd
 
