@@ -1,9 +1,3 @@
-if status is-interactive
-  if not pgrep -f xinit > /dev/null
-    command startx
-  end
-end
-
 source $HOME/.config/fish/zoxide.fish
 
 set -x PATH "$HOME/.cargo/bin:$PATH"
