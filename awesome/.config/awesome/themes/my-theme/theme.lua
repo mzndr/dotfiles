@@ -18,7 +18,7 @@ local wallpapers = {
   "~/Pictures/pixelarts/7.jpg",
   "~/Pictures/pixelarts/8.jpg",
 }
-local bg_image = wallpapers[5];
+local bg_image = wallpapers[1];
 
 local theme = {}
 
