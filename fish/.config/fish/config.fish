@@ -7,8 +7,8 @@ set -x GLPAT (cat "$HOME/glpat.token")
 
 export EDITOR=nvim
 
-abbr -a ls  "exa"
-abbr -a ll  "exa -la --git"
+abbr -a ls  "exa --group-directories-first"
+abbr -a ll  "exa -la --git --group-directories-first"
 abbr -a cat "bat"
 abbr -a q   "exit"
 abbr -a dcup "docker compose up -d && docker compose logs -f"
