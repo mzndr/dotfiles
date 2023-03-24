@@ -13,6 +13,7 @@ abbr -a cat "bat"
 abbr -a q   "exit"
 abbr -a dcup "docker compose up -d && docker compose logs -f"
 abbr -a ts 'tmux new -s $(basename $(pwd))'
+abbr -a ta 'tmux attach'
 
 fish_vi_key_bindings
 
