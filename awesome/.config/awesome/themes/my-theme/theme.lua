@@ -18,7 +18,7 @@ local wallpapers = {
   "~/Pictures/pixelarts/7.jpg",
   "~/Pictures/pixelarts/8.jpg",
 }
-local bg_image = wallpapers[1];
+local bg_image = wallpapers[2];
 
 local theme = {}
 
@@ -35,8 +35,8 @@ theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.useless_gap   = dpi(3)
-theme.border_width  = dpi(2)
+theme.useless_gap   = dpi(0)
+theme.border_width  = dpi(1)
 theme.border_normal = "#1F1F28"
 theme.border_focus = "#2F2F28"
 theme.border_marked = "#91231c"
