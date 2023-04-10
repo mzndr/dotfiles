@@ -7,18 +7,7 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/" 
-local wallpapers = {
-  "~/wallpapers/1.jpg",
-  "~/wallpapers/2.jpg",
-  "~/wallpapers/2.png",
-  "~/wallpapers/3.jpg",
-  "~/wallpapers/4.jpg",
-  "~/wallpapers/5.jpg",
-  "~/wallpapers/6.jpg",
-  "~/wallpapers/7.jpg",
-  "~/wallpapers/8.jpg",
-}
-local bg_image = wallpapers[2];
+local bg_image = "~/wallpapers/purple_blossom_street.jpg";
 
 local theme = {}
 
