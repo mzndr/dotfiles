@@ -8,15 +8,15 @@ local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/" 
 local wallpapers = {
-  "~/Pictures/pixelarts/1.jpg",
-  "~/Pictures/pixelarts/2.jpg",
-  "~/Pictures/pixelarts/2.png",
-  "~/Pictures/pixelarts/3.jpg",
-  "~/Pictures/pixelarts/4.jpg",
-  "~/Pictures/pixelarts/5.jpg",
-  "~/Pictures/pixelarts/6.jpg",
-  "~/Pictures/pixelarts/7.jpg",
-  "~/Pictures/pixelarts/8.jpg",
+  "~/wallpapers/1.jpg",
+  "~/wallpapers/2.jpg",
+  "~/wallpapers/2.png",
+  "~/wallpapers/3.jpg",
+  "~/wallpapers/4.jpg",
+  "~/wallpapers/5.jpg",
+  "~/wallpapers/6.jpg",
+  "~/wallpapers/7.jpg",
+  "~/wallpapers/8.jpg",
 }
 local bg_image = wallpapers[2];
 
