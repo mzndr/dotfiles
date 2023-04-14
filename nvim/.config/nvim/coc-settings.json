@@ -1,7 +1,8 @@
 {
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
-  "Lua.diagnostics.globals": ["vim"]
+  "Lua.diagnostics.globals": ["vim"],
+  "rust-analyzer.checkOnSave.command": "clippy",
 }
 
 
