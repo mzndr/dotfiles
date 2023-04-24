@@ -8,3 +8,4 @@ abbr -a dcup "docker compose up -d && docker compose logs -f"
 abbr -a ts 'tmux new -s $(basename $(pwd))'
 abbr -a ta 'tmux attach'
 abbr -a cw 'cargo watch - '
+abbr -a v 'nvim'
