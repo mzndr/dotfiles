@@ -18,8 +18,8 @@ end
 
 packer.startup(function(use)
   use ({'wbthomason/packer.nvim'})
-  use ({'yggdroot/indentLine'})
-  use ({'nelsyeung/twig.vim'})
+  -- use ({'yggdroot/indentLine'})
+  -- use ({'nelsyeung/twig.vim'})
 
   use ({
     'machakann/vim-highlightedyank',
@@ -37,20 +37,30 @@ packer.startup(function(use)
   })
 
   use ({
+    'doronbehar/nvim-fugitive',
+    config = function() require('plugins/configs/fugitive') end,
+  })
+
+  use ({
+    'mbbill/undotree',
+    config = function() require('plugins/configs/undotree') end,
+  })
+
+  use ({
     'ThePrimeagen/harpoon',
     config = function() require('plugins/configs/charpoon') end,
   })
 
   use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-    config = function() require('plugins/configs/clualine') end,
+   'nvim-lualine/lualine.nvim',
+   requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+   config = function() require('plugins/configs/clualine') end,
   }
 
-  use ({
-    '907th/vim-auto-save',
-    config = function() require('plugins/configs/autosave') end,
-  })
+  -- use ({
+  --   '907th/vim-auto-save',
+  --   config = function() require('plugins/configs/autosave') end,
+  -- })
 
   use ({
     'xiyaowong/virtcolumn.nvim',
