@@ -17,9 +17,9 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 	overrides = function(colors)
 		local theme = colors.theme
 		local palette = colors.palette
-		local innerColor = "NONE"
-		local borderBg = "NONE"
-		local borderFg = theme.ui.bg_p2
+		local innerColor = palette.dragonBlack4
+		local borderBg = theme.ui.bg_p2
+		local borderFg = palette.dragonViolet
 		return {
 			FloatBorder = { bg = "NONE" },
 			NormalFloat = { bg = "NONE" },
@@ -29,21 +29,24 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 				fg = theme.ui.special,
 				bold = true,
 			},
+			TelescopePromptNormal = { bg = theme.ui.bg_p1 },
 			TelescopePromptBorder = {
-				fg = borderFg,
-				bg = borderBg,
+				fg = theme.ui.bg_p1,
+				bg = theme.ui.bg_p1,
+			},
+			TelescopeResultsNormal = {
+				fg = theme.ui.fg_dim,
+				bg = theme.ui.bg_m1,
 			},
 			TelescopeResultsBorder = {
-				fg = borderFg,
-				bg = borderBg,
+				fg = theme.ui.bg_m2,
+				bg = theme.ui.bg_m2,
 			},
+			TelescopePreviewNormal = { bg = theme.ui.bg_dim },
 			TelescopePreviewBorder = {
-				bg = borderBg,
-				fg = borderFg,
+				bg = theme.ui.bg_dim,
+				fg = theme.ui.bg_dim,
 			},
-			TelescopeResultsNormal = { bg = innerColor },
-			TelescopePromptNormal = { bg = innerColor },
-			TelescopePreviewNormal = { bg = innerColor },
 			CocFloating = { bg = "#1F1F28" },
 			Pmenu = {
 				fg = theme.ui.shade0,
@@ -56,7 +59,7 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 			PmenuSbar = { bg = theme.ui.bg_m1 },
 			PmenuThumb = { bg = theme.ui.bg_p2 },
 			Visual = {
-				bg = colors.palette.dragonPink,
+				bg = colors.palette.sakuraPink,
 				fg = colors.palette.dragonBlack1,
 			},
 		}
