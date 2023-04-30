@@ -1,7 +1,7 @@
 local set = vim.opt
 
 set.ignorecase = true
-set.smartcase  = true
+set.smartcase = true
 set.wrap = false
 set.expandtab = true
 set.autoread = true

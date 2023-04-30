@@ -1,1 +1,1 @@
-vim.g.highlightedyank_highlight_duration = 65;
+vim.g.highlightedyank_highlight_duration = 65
