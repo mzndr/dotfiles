@@ -57,10 +57,10 @@ packer.startup(function(use)
    config = function() require('plugins/configs/clualine') end,
   }
 
-  -- use ({
-  --   '907th/vim-auto-save',
-  --   config = function() require('plugins/configs/autosave') end,
-  -- })
+  use ({
+    '907th/vim-auto-save',
+    config = function() require('plugins/configs/autosave') end,
+  })
 
   use ({
     'xiyaowong/virtcolumn.nvim',
