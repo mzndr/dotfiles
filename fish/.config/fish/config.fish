@@ -1,3 +1,4 @@
+source $HOME/.config/fish/kanagawa.fish
 source $HOME/.config/fish/zoxide.fish
 
 set -x PATH "$HOME/.cargo/bin:$PATH"
