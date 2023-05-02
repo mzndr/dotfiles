@@ -59,7 +59,7 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 			PmenuSbar = { bg = theme.ui.bg_m1 },
 			PmenuThumb = { bg = theme.ui.bg_p2 },
 			Visual = {
-				bg = colors.palette.sakuraPink,
+				bg = colors.palette.samuraiRed,
 				fg = colors.palette.dragonBlack1,
 			},
 		}
