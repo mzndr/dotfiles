@@ -67,3 +67,4 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 
 -- setup must be called before loading
 vim.cmd("colorscheme kanagawa")
+vim.cmd("hi HighlightedyankRegion guibg=#C34043");
