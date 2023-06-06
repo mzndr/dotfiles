@@ -2,7 +2,7 @@ local set = vim.keymap.set
 
 vim.g.mapleader = " "
 
-set("i", "jj", "<Esc>")
+-- set("i", "jj", "<Esc>")
 set("n", "n", "nzzzv")
 set("n", "N", "Nzzzv")
 
@@ -14,8 +14,8 @@ set("n", "<leader>y", '"+y')
 set("n", "<leader>Y", '"+Y')
 set("v", "<leader>y", '"+y')
 
-set("n", "<C-j>", "<Plug>(coc-diagnostic-prev)", { silent = true })
-set("n", "<C-k>", "<Plug>(coc-diagnostic-next)", { silent = true })
+set("n", "<C-j>", "<Plug>(coc-diagnostic-next)", { silent = true })
+set("n", "<C-k>", "<Plug>(coc-diagnostic-prev)", { silent = true })
 
 set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
