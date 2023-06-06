@@ -2,7 +2,7 @@ local set = vim.keymap.set
 
 vim.g.mapleader = " "
 
--- set("i", "jj", "<Esc>")
+set("i", "jj", "<Esc>")
 set("n", "n", "nzzzv")
 set("n", "N", "Nzzzv")
 
