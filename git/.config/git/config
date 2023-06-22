@@ -6,3 +6,6 @@
   tool = nvim
 [mergetool]
   prompt = false
+[user]
+	name = Marius Zander
+	email = marius@bam-bam-bam.com
