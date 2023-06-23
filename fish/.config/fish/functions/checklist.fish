@@ -10,7 +10,6 @@ function checklist
         fnm \
         git \
         gpg \
-        gsed \
         mkcert \
         nvim \
         oha \
@@ -22,7 +21,10 @@ function checklist
         stow \
         tmux \
         zoxide \
-        dust
+        dust \
+        keepass \
+        awesome \
+        dmenu
 
     set -l installed_count 0
 
