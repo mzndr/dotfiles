@@ -11,3 +11,4 @@ abbr -a cw 'cargo watch - '
 abbr -a v 'nvim'
 abbr -a tree  "exa -la --git --git-ignore --group-directories-first --tree"
 abbr -a dps 'docker ps --format "table {{.ID}}\t{{.Names}}\t{{.RunningFor}}\t{{.Status}}"'
+abbr -a fn 'find . -name '
