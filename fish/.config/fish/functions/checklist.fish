@@ -2,7 +2,6 @@
 function checklist
     set -l bins \
         bat \
-        brew \
         btm \
         curl \
         docker \
@@ -17,15 +16,14 @@ function checklist
         nvim \
         oha \
         ouch \
-        paru \
-        ranger \
         rg \
         rustup \
         scp \
         ssh \
-        starship \
         stow \
-        tmux
+        tmux \
+        zoxide \
+        dust
 
     set -l installed_count 0
 
@@ -34,9 +32,9 @@ function checklist
 
         if fish -c "command -q $bin"
             set installed_count (math $installed_count + 1)
-            echo -s (set_color green)  (set_color normal)
+            echo -s (set_color green) installed (set_color normal)
         else
-            echo -s (set_color red)  (set_color normal)
+            echo -s (set_color red) missing (set_color normal)
         end
     end
 
