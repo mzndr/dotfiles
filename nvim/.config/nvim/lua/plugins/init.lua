@@ -17,13 +17,6 @@ if not is_installed then
 end
 
 packer.startup(function(use)
--- use ({'yggdroot/indentLine'})
--- use ({'nelsyeung/twig.vim'})
-
--- use ({
---   'folke/tokyonight.nvim',
---   config = function() require('plugins/configs/tokyonight') end,
--- })
 	use({ "wbthomason/packer.nvim" })
 	use({
 		"machakann/vim-highlightedyank",
@@ -36,20 +29,6 @@ packer.startup(function(use)
 		"rebelot/kanagawa.nvim",
 		config = function()
 			require("plugins/configs/kanagawa")
-		end,
-	})
-
-	use({
-		"doronbehar/nvim-fugitive",
-		config = function()
-			require("plugins/configs/fugitive")
-		end,
-	})
-
-	use({
-		"mbbill/undotree",
-		config = function()
-			require("plugins/configs/undotree")
 		end,
 	})
 
@@ -75,13 +54,6 @@ packer.startup(function(use)
 		"907th/vim-auto-save",
 		config = function()
 			require("plugins/configs/autosave")
-		end,
-	})
-
-	use({
-		"xiyaowong/virtcolumn.nvim",
-		config = function()
-			require("plugins/configs/virtcolumn")
 		end,
 	})
 
