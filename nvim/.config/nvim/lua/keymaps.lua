@@ -27,11 +27,4 @@ set("i", "<S-Down>", "<nop>")
 set("n", "<leader>x", vim.cmd.bw)
 set("n", "<leader>w", vim.cmd.Ex)
 
-set("n", "<leader>z", vim.cmd.UndotreeToggle)
 
-set("n", "<leader>gs", ":Gstatus<CR>")
-set("n", "<leader>gb", ":Gblame<CR>")
-set("n", "<leader>go", ":Gbrowse<CR>")
-set("n", "<leader>gc", ":Gcommit<CR>")
-set("n", "<leader>gp", ":!git push<CR>")
-set("n", "<leader>ga", ":!git add %<CR>")
