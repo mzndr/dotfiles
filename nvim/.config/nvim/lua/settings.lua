@@ -14,5 +14,6 @@ set.scrolloff = 10
 set.tabstop = 2
 set.shiftwidth = 2
 set.number = true
+set.laststatus = 0
 
 vim.g.netrw_altfile = 1
