@@ -159,11 +159,11 @@ awful.screen.connect_for_each_screen(function(s)
                            awful.button({ }, 4, function () awful.layout.inc( 1) end),
                            awful.button({ }, 5, function () awful.layout.inc(-1) end)))
     -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
-        screen  = s,
-        filter  = awful.widget.taglist.filter.all,
-        buttons = taglist_buttons
-    }
+    --s.mytaglist = awful.widget.taglist {
+    --    screen  = s,
+    --    filter  = awful.widget.taglist.filter.all,
+    --    buttons = taglist_buttons
+    --}
 
     -- Create a tasklist widget
     -- s.mytasklist = awful.widget.tasklist {
@@ -173,27 +173,27 @@ awful.screen.connect_for_each_screen(function(s)
     -- }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ 
-      height = 32,
-      opacity = 0.7,
-      position = "top", 
-      screen = s 
-    })
+    -- s.mywibox = awful.wibar({ 
+    --   height = 32,
+    --   opacity = 0.7,
+    --   position = "top", 
+    --   screen = s 
+    -- })
 
-    -- Add widgets to the wibox
-    s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
-        { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            s.mytaglist,
-        },
-        s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            mytextclock,
-            s.mylayoutbox,
-        },
-    }
+    -- -- Add widgets to the wibox
+    -- s.mywibox:setup {
+    --     layout = wibox.layout.align.horizontal,
+    --     { -- Left widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         s.mytaglist,
+    --     },
+    --     s.mytasklist, -- Middle widget
+    --     { -- Right widgets
+    --         layout = wibox.layout.fixed.horizontal,
+    --         mytextclock,
+    --         s.mylayoutbox,
+    --     },
+    -- }
 end)
 -- }}}
 
@@ -424,7 +424,7 @@ root.keys(globalkeys)
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
-      properties = { border_width = 3,
+      properties = { border_width = beautiful.border_width,
                      border_color = 0,
                      focus = awful.client.focus.filter,
                      raise = false,
