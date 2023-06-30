@@ -24,7 +24,8 @@ function checklist
         dust \
         keepass \
         awesome \
-        dmenu
+        dmenu \
+        websocat
 
     set -l installed_count 0
 
