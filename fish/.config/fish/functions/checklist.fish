@@ -25,7 +25,8 @@ function checklist
         keepass \
         awesome \
         dmenu \
-        websocat
+        websocat \
+        nmtui 
 
     set -l installed_count 0
 
