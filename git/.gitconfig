@@ -1,17 +1,19 @@
+[init]
+  defaultBranch = main
 [mergetool "nvim"]
   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
-[merge]
-  tool = nvim
 [mergetool]
   prompt = false
+[merge]
+  tool = nvim
 [user]
 	email = marius@bam-bam-bam.com
 	name = Marius Zander
   useConfigOnly = true
 [push]
   autoSetupRemote = true
-[init]
-  defaultBranch = main
+[pull]
+  rebase = true
 [fetch]
   prune = true
 [remote "origin"]
