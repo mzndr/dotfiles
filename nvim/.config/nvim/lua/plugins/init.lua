@@ -58,9 +58,14 @@ packer.startup(function(use)
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
 		requires = { { "nvim-lua/plenary.nvim" } },
+		after = { "nvim-treesitter" },
 		config = function()
 			require("plugins/configs/telescope")
 		end,
+	})
+
+	use({
+		"fannheyward/telescope-coc.nvim",
 	})
 
 	use({
