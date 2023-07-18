@@ -1,0 +1,18 @@
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+[merge]
+  tool = nvim
+[mergetool]
+  prompt = false
+[user]
+	email = marius@bam-bam-bam.com
+	name = Marius Zander
+  useConfigOnly = true
+[push]
+  autoSetupRemote = true
+[init]
+  defaultBranch = main
+[fetch]
+  prune = true
+[remote "origin"]
+  prune = true
