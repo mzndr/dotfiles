@@ -25,6 +25,7 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 			NormalFloat = { bg = "NONE" },
 			LineNr = { bg = "NONE" },
 			SignColumn = { bg = "NONE" },
+      StatusLine = { bg = "NONE" },
 			TelescopeTitle = {
 				fg = theme.ui.special,
 				bold = true,
