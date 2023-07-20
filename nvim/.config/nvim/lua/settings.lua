@@ -15,7 +15,5 @@ set.tabstop = 2
 set.shiftwidth = 2
 set.number = true
 set.cmdheight = 0
-set.statusline = "%F"
-
-
+set.statusline = "%=%F"
 vim.g.netrw_altfile = 1
