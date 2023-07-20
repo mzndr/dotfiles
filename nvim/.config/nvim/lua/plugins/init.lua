@@ -18,10 +18,18 @@ end
 
 packer.startup(function(use)
 	use({ "wbthomason/packer.nvim" })
+
 	use({
 		"machakann/vim-highlightedyank",
 		config = function()
 			require("plugins/configs/highlightedyank")
+		end,
+	})
+
+	use({
+		"tpope/vim-fugitive",
+		config = function()
+			require("plugins/configs/fugitive")
 		end,
 	})
 
@@ -62,10 +70,6 @@ packer.startup(function(use)
 		config = function()
 			require("plugins/configs/telescope")
 		end,
-	})
-
-	use({
-		"fannheyward/telescope-coc.nvim",
 	})
 
 	use({
