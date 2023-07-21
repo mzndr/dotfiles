@@ -26,5 +26,3 @@ set("i", "<S-Down>", "<nop>")
 
 set("n", "<leader>x", vim.cmd.bw)
 set("n", "<leader>w", vim.cmd.Ex)
-
-
