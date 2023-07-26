@@ -1,9 +1,9 @@
 -- Default options:
 require("kanagawa").setup({ -- enable undercurls -- special highlight for the return keyword -- special highlight for exception handling keywords -- do not set background color -- dim inactive window `:h hl-NormalNC` -- adjust window separators highlight for laststatus=3 -- define vim.g.terminal_color_{0,17} -- Load "default" theme or the experimental "light" theme
 	undercurl = false,
-	commentStyle = { italic = true },
+	commentStyle = { italic = false },
 	functionStyle = {},
-	keywordStyle = { italic = true },
+	keywordStyle = { italic = false },
 	statementStyle = { bold = true },
 	typeStyle = {},
 	variablebuiltinStyle = { italic = true },
