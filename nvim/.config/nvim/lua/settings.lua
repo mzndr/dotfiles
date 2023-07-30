@@ -14,7 +14,7 @@ set.scrolloff = 10
 set.tabstop = 2
 set.shiftwidth = 2
 set.number = true
-set.cmdheight = 0
-set.statusline = "%=%f"
+--set.cmdheight = 0
+--set.statusline = "%=%f"
 vim.g.netrw_altfile = 1
 vim.g.netrw_keepj=""
