@@ -1,16 +1,10 @@
-#!/bin/sh
-pushd "$HOME/dotfiles"
+#!/usr/bin/env bash 
+cd "$HOME/dotfiles"
 
-stow -S nvim
-stow -S kitty
-stow -S fish
-stow -S tmux
-
-stow -S git
-
-stow -S awesome
-stow -S picom
-stow -S polybar
-
-popd
-
+for file in *; do
+  if test -d $file ; then
+    stow -S $file && echo "stowed $file"  
+  else
+    echo "skipping $file, not a dir"
+  fi
+done
