@@ -195,3 +195,7 @@ vim.api.nvim_create_user_command(
 vim.opt.statusline:prepend(
 	"%{coc#status()}%{get(b:,'coc_current_function','')}"
 )
+
+keyset("n", "<C-l>", "<Plug>(coc-diagnostic-next)", { silent = true })
+keyset("n", "<C-h>", "<Plug>(coc-diagnostic-prev)", { silent = true })
+
