@@ -198,4 +198,6 @@ vim.opt.statusline:prepend(
 
 keyset("n", "<C-l>", "<Plug>(coc-diagnostic-next)", { silent = true })
 keyset("n", "<C-h>", "<Plug>(coc-diagnostic-prev)", { silent = true })
+keyset("n", "<C-h>", "<Plug>(coc-diagnostic-prev)", { silent = true })
+keyset("n", "<leader>d", ":Format<CR>", { silent = true })
 
