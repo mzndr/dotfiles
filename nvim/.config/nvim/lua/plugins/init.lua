@@ -34,13 +34,6 @@ packer.startup(function(use)
   })
 
   use({
-    "tpope/vim-surround",
-    config = function()
-      require("plugins/configs/surround")
-    end,
-  })
-
-  use({
     "rebelot/kanagawa.nvim",
     config = function()
       require("plugins/configs/kanagawa")
