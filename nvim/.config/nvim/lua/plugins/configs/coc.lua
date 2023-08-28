@@ -63,10 +63,10 @@ keyset("n", "[g", "<Plug>(coc-diagnostic-prev)", { silent = true })
 keyset("n", "]g", "<Plug>(coc-diagnostic-next)", { silent = true })
 
 -- GoTo code navigation.
---keyset("n", "<leader>gd", "<Plug>(coc-definition)", { silent = true })
---keyset("n", "<leader>gy", "<Plug>(coc-type-definition)", { silent = true })
---keyset("n", "<leader>gi", "<Plug>(coc-implementation)", { silent = true })
---keyset("n", "<leader>gr", "<Plug>(coc-references)", { silent = true })
+keyset("n", "<leader>gd", "<Plug>(coc-definition)", { silent = true })
+keyset("n", "<leader>gt", "<Plug>(coc-type-definition)", { silent = true })
+keyset("n", "<leader>gi", "<Plug>(coc-implementation)", { silent = true })
+keyset("n", "<leader>gr", "<Plug>(coc-references)", { silent = true })
 
 -- Use K to show documentation in preview window.
 function _G.show_docs()
