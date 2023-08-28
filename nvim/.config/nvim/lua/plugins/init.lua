@@ -47,6 +47,9 @@ packer.startup(function(use)
     end,
   })
 
+  use({"fannheyward/telescope-coc.nvim"})
+
+
   use({
     "907th/vim-auto-save",
     config = function()
