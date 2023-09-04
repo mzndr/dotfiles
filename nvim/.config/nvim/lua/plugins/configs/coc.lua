@@ -72,6 +72,9 @@ keyset("n", "<leader>gd", ":Telescope coc definitions<cr>", { silent = true })
 keyset("n", "<leader>gt", ":Telescope coc type_definitions<cr>", { silent = true })
 keyset("n", "<leader>gi", ":Telescope coc implementations<cr>", { silent = true })
 keyset("n", "<leader>gr", ":Telescope coc references<cr>", { silent = true })
+keyset("n", "<leader>gr", ":Telescope coc references<cr>", { silent = true })
+keyset("n", "<leader>gj", ":Telescope coc workspace_diagnostics<cr>", { silent = true })
+keyset("n", "<leader>gs", ":Telescope coc workspace_symbols<cr>", { silent = true })
 
 -- Use K to show documentation in preview window.
 function _G.show_docs()
