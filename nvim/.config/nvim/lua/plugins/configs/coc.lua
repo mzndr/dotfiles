@@ -63,12 +63,12 @@ keyset("n", "[g", "<Plug>(coc-diagnostic-prev)", { silent = true })
 keyset("n", "]g", "<Plug>(coc-diagnostic-next)", { silent = true })
 
 -- GoTo code navigation.
--- keyset("n", "<leader>gd", "<Plug>(coc-definition)", { silent = true })
+keyset("n", "<leader>gd", "<Plug>(coc-definition)", { silent = true })
 -- keyset("n", "<leader>gt", "<Plug>(coc-type-definition)", { silent = true })
 -- keyset("n", "<leader>gi", "<Plug>(coc-implementation)", { silent = true })
 -- keyset("n", "<leader>gr", "<Plug>(coc-references)", { silent = true })
 
-keyset("n", "<leader>gd", ":Telescope coc definitions<cr>", { silent = true })
+-- keyset("n", "<leader>gd", ":Telescope coc definitions<cr>", { silent = true })
 keyset("n", "<leader>gt", ":Telescope coc type_definitions<cr>", { silent = true })
 keyset("n", "<leader>gi", ":Telescope coc implementations<cr>", { silent = true })
 keyset("n", "<leader>gr", ":Telescope coc references<cr>", { silent = true })
