@@ -3,6 +3,7 @@ function checklist
     set -l bins \
         bat \
         btm \
+        jq \
         curl \
         docker \
         exa \
