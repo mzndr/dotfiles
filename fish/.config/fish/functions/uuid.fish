@@ -4,6 +4,7 @@ function uuid --description 'Generate UUIDs'
   set _flag_n 1
 
   argparse -i -x s,S 'n#number' 's/string' 'S/singlequote' 'c/csv' 'a/array' -- $argv
+  or return
 
   if set -q _flag_a
     echo [
