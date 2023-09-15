@@ -26,7 +26,6 @@ for i in (seq 1 "$_flag_n")
     set print \t$print
   end
 
-
   echo $print
 end
 
