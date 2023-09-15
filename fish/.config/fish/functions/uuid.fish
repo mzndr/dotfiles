@@ -1,6 +1,8 @@
 #!/usr/bin/fish
 
-argparse -i 'n#number' 's/string' 'S/singlequote' 'c/csv' 'a/array' -- $argv
+set _flag_n 1
+
+argparse -i -x s,S 'n#number' 's/string' 'S/singlequote' 'c/csv' 'a/array' -- $argv
 
 if set -q _flag_a
   echo [
