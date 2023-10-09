@@ -1,5 +1,6 @@
 local set = vim.opt
 
+set.shadafile = "NONE"
 set.ignorecase = true
 set.smartcase = true
 set.wrap = false
