@@ -2,9 +2,10 @@ local builtin = require("telescope.builtin")
 local telescope = require("telescope")
 
 telescope.setup({
+  file_ignore_pattern = { ".git" },
   pickers = {
     find_files = {
-      hidden = true
+      hidden = false
     },
   },
   extensions = {
