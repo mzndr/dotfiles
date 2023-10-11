@@ -1,7 +1,10 @@
 :root {
     --tridactyl-bg: #0f0f18;
     --tridactyl-fg: #dcd7ba;
+    --tridactyl-cmdl-bg: #1f1f28;
+    --tridactyl-cmdl-fg: #dcd7ba;
     --tridactyl-scrollbar-color: #131 var(--tridactyl-fg);
+    --tridactyl-url-fg: #72a7bc;
 }
 
 :root.TridactylOwnNamespace {
