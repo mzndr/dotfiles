@@ -27,6 +27,13 @@ packer.startup(function(use)
   })
 
   use({
+    "stefanlogue/hydrate.nvim",
+    config = function()
+      require("plugins/configs/hydrate")
+    end,
+  })
+
+  use({
     "tpope/vim-fugitive",
     config = function()
       require("plugins/configs/fugitive")
