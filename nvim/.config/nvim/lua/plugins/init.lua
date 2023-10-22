@@ -19,27 +19,7 @@ end
 packer.startup(function(use)
   use({ "wbthomason/packer.nvim" })
 
-  use({
-    "machakann/vim-highlightedyank",
-    config = function()
-      require("plugins/configs/highlightedyank")
-    end,
-  })
-
-  use({
-    "stefanlogue/hydrate.nvim",
-    config = function()
-      require("plugins/configs/hydrate")
-    end,
-  })
-
-  use({
-    "tpope/vim-fugitive",
-    config = function()
-      require("plugins/configs/fugitive")
-    end,
-  })
-
+  -- *** Colorschemes ***
   use({
     "rebelot/kanagawa.nvim",
     config = function()
@@ -47,56 +27,13 @@ packer.startup(function(use)
     end,
   })
 
-  use({
-    "ThePrimeagen/harpoon",
-    config = function()
-      require("plugins/configs/charpoon")
-    end,
-  })
-
-  use({"fannheyward/telescope-coc.nvim"})
-
-
-  use({
-    "907th/vim-auto-save",
-    config = function()
-      require("plugins/configs/autosave")
-    end,
-  })
-
-  use({
-    "neoclide/coc.nvim",
-    branch = "release",
-    config = function()
-      require("plugins/configs/coc")
-    end,
-  })
-
-  use({
-    "nvim-telescope/telescope.nvim",
-    tag = "0.1.0",
-    requires = { { "nvim-lua/plenary.nvim" } },
-    after = { "nvim-treesitter", "harpoon", "telescope-coc.nvim" },
-    config = function()
-      require("plugins/configs/telescope")
-    end,
-  })
-
+  -- *** Treesitter ***
   use({
     "nvim-treesitter/nvim-treesitter",
     config = function()
       require("plugins/configs/treesitter")
     end,
   })
-
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true },
-    config = function()
-      require("plugins/configs/clualine")
-    end,
-  }
-
   use({
     "nvim-treesitter/nvim-treesitter-context",
     after = { "nvim-treesitter" },
@@ -104,4 +41,84 @@ packer.startup(function(use)
       require("plugins/configs/treesitter-context")
     end,
   })
+
+  -- *** Telescope ***
+  use({
+    "ThePrimeagen/harpoon",
+    config = function()
+      require("plugins/configs/charpoon")
+    end,
+  })
+  use({
+    "nvim-telescope/telescope.nvim",
+    branch = "0.1.x",
+    requires = { { "nvim-lua/plenary.nvim" } },
+    after = { "nvim-treesitter", "harpoon" },
+    config = function()
+      require("plugins/configs/telescope")
+    end,
+  })
+
+  -- *** LSP ***
+  use { "neovim/nvim-lspconfig" }
+  use {
+    "williamboman/mason.nvim",
+    config = function()
+      require("plugins/configs/mason")
+    end,
+  }
+  use {
+    "williamboman/mason-lspconfig.nvim",
+    after = {"nvim-lspconfig"},
+    config = function()
+      require("plugins/configs/mason-lspconfig")
+    end,
+  }
+
+  -- *** Auto Completion ---
+  use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "L3MON4D3/LuaSnip",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-cmdline",
+    },
+    config = function()
+      require("plugins/configs/cmp")
+    end,
+  }
+  use {
+    "saadparwaiz1/cmp_luasnip",
+    after = { "nvim-cmp" }
+  }
+
+  -- *** Misc ***
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+    config = function()
+      require("plugins/configs/clualine")
+    end,
+  }
+  use({
+    "machakann/vim-highlightedyank",
+    config = function()
+      require("plugins/configs/highlightedyank")
+    end,
+  })
+  use({
+    "tpope/vim-fugitive",
+    config = function()
+      require("plugins/configs/fugitive")
+    end,
+  })
+  use({
+    "907th/vim-auto-save",
+    config = function()
+      require("plugins/configs/autosave")
+    end,
+  })
+
 end)
