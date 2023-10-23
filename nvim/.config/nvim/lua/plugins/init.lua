@@ -69,7 +69,7 @@ packer.startup(function(use)
   }
   use {
     "williamboman/mason-lspconfig.nvim",
-    after = {"nvim-lspconfig"},
+    after = { "nvim-lspconfig" },
     config = function()
       require("plugins/configs/mason-lspconfig")
     end,
@@ -120,5 +120,4 @@ packer.startup(function(use)
       require("plugins/configs/autosave")
     end,
   })
-
 end)
