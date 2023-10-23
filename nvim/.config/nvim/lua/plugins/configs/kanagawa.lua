@@ -22,7 +22,7 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 		local borderFg = palette.dragonViolet
 		return {
 			FloatBorder = { bg = "NONE" },
-			NormalFloat = { bg = "NONE" },
+			NormalFloat = { bg = theme.ui.bg_p1 },
 			LineNr = { bg = "NONE" },
 			SignColumn = { bg = "NONE" },
       StatusLine = { bg = "NONE" },
