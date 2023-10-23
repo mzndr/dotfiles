@@ -48,7 +48,6 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 				bg = theme.ui.bg_dim,
 				fg = theme.ui.bg_dim,
 			},
-			CocFloating = { bg = "#1F1F28" },
 			Pmenu = {
 				fg = theme.ui.shade0,
 				bg = theme.ui.bg_p1,

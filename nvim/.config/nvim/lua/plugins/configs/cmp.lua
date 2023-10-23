@@ -1,5 +1,8 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
+
+vim.api.nvim_set_hl(0, "CmpNormal", { bg = "#1F1F28" })
+
 cmp.setup({
   snippet = {
     expand = function(args)
@@ -14,6 +17,11 @@ cmp.setup({
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
   }),
+  window = {
+    documentation = {
+      winhighlight = "Normal:CmpNormal",
+    }
+  },
 
   sources = cmp.config.sources({
       { name = 'nvim_lsp' },
@@ -23,4 +31,3 @@ cmp.setup({
       { name = 'buffer' },
     })
 })
-
