@@ -23,3 +23,8 @@ set("i", "<S-Down>", "<nop>")
 
 set("n", "<leader>x", vim.cmd.bw)
 set("n", "<leader>w", vim.cmd.Ex)
+
+set('n', '<space>e', vim.diagnostic.open_float)
+set('n', '<C-l>', vim.diagnostic.goto_next)
+set('n', '<C-h>', vim.diagnostic.goto_prev)
+set("n", "<Leader>kk", vim.diagnostic.open_float)

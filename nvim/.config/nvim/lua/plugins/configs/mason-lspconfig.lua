@@ -54,11 +54,6 @@ local capabilities = require("cmp_nvim_lsp")
 local on_attach = function(_, buffer)
   local opts = { buffer = buffer }
   local set = vim.keymap.set
-
-
-  set('n', '<space>e', vim.diagnostic.open_float)
-  set('n', '<C-l>', vim.diagnostic.goto_next)
-  set('n', '<C-h>', vim.diagnostic.goto_prev)
   set('n', '<space>q', vim.diagnostic.setloclist)
   set("n", "cr", vim.lsp.buf.rename, opts)
   set("n", "<Leader>lS", vim.lsp.buf.signature_help, opts)
