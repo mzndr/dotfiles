@@ -19,3 +19,8 @@ set.number = true
 --set.statusline = "%=%f"
 vim.g.netrw_altfile = 1
 vim.g.netrw_keepj=""
+
+vim.diagnostic.config({
+  severity_sort = true,
+  virtual_text = { spacing = 0, prefix = "" },
+})
