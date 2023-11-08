@@ -27,7 +27,8 @@ function checklist
         awesome \
         dmenu \
         websocat \
-        nmtui 
+        nmtui \
+        duf
 
     set -l installed_count 0
 
