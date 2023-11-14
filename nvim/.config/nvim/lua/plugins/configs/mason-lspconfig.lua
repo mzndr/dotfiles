@@ -1,5 +1,6 @@
 local mason_lspconfig = require("mason-lspconfig");
 local lsp_servers = {
+  intelephense = {},
   cssls = {},
   dockerls = {},
   html = {},
