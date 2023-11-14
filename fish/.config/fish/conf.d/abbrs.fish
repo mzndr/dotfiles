@@ -19,3 +19,4 @@ abbr -a gc 'git commit -m ""'
 abbr -a gca 'git commit --amend'
 
 abbr -a c 'clear'
+abbr -a duf 'duf -hide loops'
