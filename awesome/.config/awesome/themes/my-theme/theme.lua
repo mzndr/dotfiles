@@ -6,8 +6,8 @@ local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
-local themes_path = "~/.config/awesome/themes/" 
-local bg_image = "~/wallpapers/waneella/cold_street.png";
+local themes_path = "~/.config/awesome/themes/";
+local bg_image = "~/wallpapers/other_pixelarts/7.png";
 
 local theme = {}
 
