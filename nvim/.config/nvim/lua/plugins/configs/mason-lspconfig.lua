@@ -72,10 +72,18 @@ end
 
 require("mason-lspconfig").setup_handlers {
   function(server_name)
+    local settings;
+    local filetypes;
+
+    if (lsp_servers[server_name]) then
+      settings = lsp_servers[server_name].settings;
+      filetypes = lsp_servers[server_name].filetypes;
+    end
+
     require("lspconfig")[server_name].setup {
       capabilities = capabilities,
-      settings = lsp_servers[server_name].settings,
-      filetypes = lsp_servers[server_name].filetypes,
+      settings = settings,
+      filetypes = filetypes,
       on_attach = on_attach,
     }
   end
