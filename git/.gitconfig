@@ -16,5 +16,7 @@
   rebase = true
 [fetch]
   prune = true
+[add]
+  patch = true
 [remote "origin"]
   prune = true

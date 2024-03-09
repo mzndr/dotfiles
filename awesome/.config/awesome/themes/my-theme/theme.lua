@@ -7,7 +7,7 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/";
-local bg_image = "~/wallpapers/other_pixelarts/7.png";
+local bg_image = "~/wallpapers/waneella/office_desk.jpg";
 
 local theme = {}
 
