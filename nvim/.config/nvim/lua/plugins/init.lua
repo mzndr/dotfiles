@@ -42,6 +42,8 @@ packer.startup(function(use)
     end,
   })
 
+  use({"isobit/vim-caddyfile"})
+
   -- *** Telescope ***
   use({
     "ThePrimeagen/harpoon",
