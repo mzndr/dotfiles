@@ -18,5 +18,7 @@
   prune = true
 [add]
   patch = true
+[commit]
+  verbose = true
 [remote "origin"]
   prune = true
