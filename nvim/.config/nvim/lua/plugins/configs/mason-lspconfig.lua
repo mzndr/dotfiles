@@ -57,9 +57,9 @@ local on_attach = function(_, buffer)
   local set = vim.keymap.set
   set('n', '<space>q', vim.diagnostic.setloclist)
   set("n", "cr", vim.lsp.buf.rename, opts)
-  set("n", "<Leader>lS", vim.lsp.buf.signature_help, opts)
+  -- set("n", "<Leader>lS", vim.lsp.buf.signature_help, opts)
   set({ "n", "v" }, "K", vim.lsp.buf.hover, opts)
-  set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action, opts)
+  -- set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action, opts)
   set({ "n", "v" }, "<Leader>d", function()
     vim.lsp.buf.format({
       async = true,
