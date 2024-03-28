@@ -4,10 +4,27 @@ local telescope = require("telescope")
 telescope.setup({
   pickers = {
     find_files = {
-      file_ignore_patterns = { ".git/" },
-      hidden = true
+      find_command = {
+        "rg",
+        "--files",
+        "--hidden",
+        "--glob", "!*/.git/*",
+        "--glob", "!.git/*",
+        "--glob", "!*.lock",
+        "--glob", "!*/package-lock.json",
+        "--glob", "!*/pnpm-lock.yaml",
+      },
     },
-  },
+    live_grep = {
+      additional_args = function() return { "--hidden" } end,
+      glob_pattern = {
+        "!*/.git/*",
+        "!.git/*",
+        "!*.lock",
+        "!*/package-lock.json",
+        "!*/pnpm-lock.yaml",
+      },
+    },  },
 })
 
 telescope.load_extension("harpoon")
