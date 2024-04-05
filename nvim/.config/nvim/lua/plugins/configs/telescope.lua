@@ -9,6 +9,7 @@ telescope.setup({
         "--files",
         "--hidden",
         "--glob", "!*/.git/*",
+        "--glob", "!*/.sqlx/*",
         "--glob", "!.git/*",
         "--glob", "!*.lock",
         "--glob", "!*/package-lock.json",
@@ -20,6 +21,7 @@ telescope.setup({
       glob_pattern = {
         "!*/.git/*",
         "!.git/*",
+        "!*/.sqlx/*",
         "!*.lock",
         "!*/package-lock.json",
         "!*/pnpm-lock.yaml",
