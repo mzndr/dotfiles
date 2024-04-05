@@ -10,6 +10,7 @@ telescope.setup({
         "--hidden",
         "--glob", "!*/.git/*",
         "--glob", "!*/.sqlx/*",
+        "--glob", "!.sqlx/*",
         "--glob", "!.git/*",
         "--glob", "!*.lock",
         "--glob", "!*/package-lock.json",
