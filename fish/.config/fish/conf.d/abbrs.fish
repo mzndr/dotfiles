@@ -1,3 +1,5 @@
+abbr -a fish-reload-config 'source ~/.config/fish/**/*.fish'
+
 abbr -a ls  "exa --group-directories-first"
 abbr -a ll  "exa -la --git --group-directories-first"
 abbr -a cat "bat"
@@ -20,3 +22,4 @@ abbr -a gca 'git commit --amend'
 
 abbr -a c 'clear'
 abbr -a duf 'duf -hide loops'
+
