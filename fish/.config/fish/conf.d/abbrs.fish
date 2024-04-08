@@ -20,6 +20,8 @@ abbr -a gd 'git diff'
 abbr -a gp 'git push'
 abbr -a gc 'git commit -m ""'
 abbr -a gca 'git commit --amend'
+abbr -a gl 'git log --oneline'
+abbr -a glg 'git log --oneline --graph'
 
 abbr -a c 'clear'
 abbr -a duf 'duf -hide loops'
