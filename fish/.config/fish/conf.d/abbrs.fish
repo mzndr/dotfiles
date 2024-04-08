@@ -1,3 +1,4 @@
+abbr -a fish-edit-config 'cd ~/dotfiles/fish/.config/fish && nvim'
 abbr -a fish-reload-config 'source ~/.config/fish/**/*.fish'
 
 abbr -a ls  "exa --group-directories-first"
