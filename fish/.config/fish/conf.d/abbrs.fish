@@ -1,4 +1,4 @@
-abbr -a fish-edit-config 'cd ~/dotfiles/fish/.config/fish && nvim'
+abbr -a fish-edit-config 'cd ~/dotfiles/fish/.config/fish && nvim ./config.fish'
 abbr -a fish-reload-config 'source ~/.config/fish/**/*.fish'
 
 abbr -a ls  "exa --group-directories-first"
@@ -25,4 +25,6 @@ abbr -a glg 'git log --oneline --graph'
 
 abbr -a c 'clear'
 abbr -a duf 'duf -hide loops'
+
+abbr -a icat 'kitten icat '
 
