@@ -116,10 +116,13 @@ packer.startup(function(use)
       require("plugins/configs/fugitive")
     end,
   })
-  use({
-    "907th/vim-auto-save",
-    config = function()
-      require("plugins/configs/autosave")
-    end,
-  })
+
+  -- use({
+  --   "907th/vim-auto-save",
+  --   config = function()
+  --     require("plugins/configs/autosave")
+  --   end,
+  -- })
+
+  use({ "tpope/vim-abolish" })
 end)
