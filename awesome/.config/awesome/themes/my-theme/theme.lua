@@ -8,7 +8,7 @@ local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/";
 -- local bg_image = "~/wallpapers/waneella/office_desk.jpg";
-local bg_image = "~/wallpapers/cyberpunk2077/1.png";
+local bg_image = "~/wallpapers/space.jpg";
 
 local theme = {}
 
