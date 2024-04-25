@@ -102,6 +102,7 @@ packer.startup(function(use)
       require("plugins/configs/clualine")
     end,
   }
+
   use({
     "machakann/vim-highlightedyank",
     config = function()
