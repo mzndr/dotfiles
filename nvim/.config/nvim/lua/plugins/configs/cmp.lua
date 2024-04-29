@@ -31,3 +31,21 @@ cmp.setup({
       { name = 'buffer' },
     })
 })
+
+cmp.setup.cmdline({ "/", "?" }, {
+  sources = {
+    { name = "buffer" },
+  },
+  mapping = cmp.mapping.preset.cmdline(),
+})
+
+cmp.setup.cmdline(":", {
+  sources = {
+    { name = "cmdline" },
+    {
+      name = "path",
+      option = { trailing_slash = true },
+    },
+  },
+  mapping = cmp.mapping.preset.cmdline(),
+})
