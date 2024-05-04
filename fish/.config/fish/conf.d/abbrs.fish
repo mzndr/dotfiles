@@ -1,6 +1,8 @@
 abbr -a fish-edit-config 'cd ~/dotfiles/fish/.config/fish && nvim ./config.fish'
 abbr -a fish-reload-config 'source ~/.config/fish/**/*.fish'
 
+abbr -a dec-to-hex 'printf "0x%x\n" '
+
 abbr -a ls  "exa --group-directories-first"
 abbr -a ll  "exa -la --git --group-directories-first"
 abbr -a cat "bat"
