@@ -17,7 +17,7 @@ abbr -a dps 'docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.Runni
 abbr -a dcps 'docker compose ps --format "table {{.ID}}\t{{.Name}}\t{{.Ports}}\t{{.RunningFor}}\t{{.Status}}"'
 abbr -a fn 'find . -name '
 
-abbr -a gs 'git status'
+abbr -a gs 'git status --short '
 abbr -a gd 'git diff'
 abbr -a gp 'git push'
 abbr -a gc 'git commit -m ""'
