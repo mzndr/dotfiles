@@ -124,4 +124,12 @@ packer.startup(function(use)
       require("plugins/configs/undotree")
     end,
   })
+
+  use({
+      "stevearc/oil.nvim",
+      config = function()
+      require("plugins/configs/oil")
+      end,
+    })
+
 end)
