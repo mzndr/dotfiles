@@ -116,12 +116,12 @@ packer.startup(function(use)
     end,
   })
 
-  -- use({
-  --   "907th/vim-auto-save",
-  --   config = function()
-  --     require("plugins/configs/autosave")
-  --   end,
-  -- })
-
   use({ "tpope/vim-abolish" })
+
+  use({
+    "mbbill/undotree",
+    config = function()
+      require("plugins/configs/undotree")
+    end,
+  })
 end)
