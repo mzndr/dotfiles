@@ -29,7 +29,8 @@ function checklist
         websocat \
         nmtui \
         atac \
-        duf
+        duf \
+        yay
 
     set -l installed_count 0
 
