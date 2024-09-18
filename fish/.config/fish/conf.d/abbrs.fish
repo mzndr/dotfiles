@@ -3,7 +3,6 @@ abbr -a fish-reload-config 'source ~/.config/fish/**/*.fish'
 
 abbr -a dec-to-hex 'printf "0x%x\n" '
 
-abbr -a ls  "exa --group-directories-first"
 abbr -a ll  "exa -la --git --group-directories-first"
 abbr -a cat "bat"
 abbr -a q   "exit"
@@ -13,7 +12,7 @@ abbr -a ts 'TMUX_SESSION_DIR=$(pwd) tmux new -s $(basename $TMUX_SESSION_DIR)'
 abbr -a ta 'tmux attach'
 abbr -a cw 'cargo watch - '
 abbr -a v 'nvim'
-abbr -a tree  "exa -la --git --git-ignore --group-directories-first --tree"
+abbr -a t "exa -la --git --git-ignore --group-directories-first --tree"
 abbr -a dps 'docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.RunningFor}}\t{{.Status}}"'
 abbr -a dcps 'docker compose ps --format "table {{.ID}}\t{{.Name}}\t{{.Ports}}\t{{.RunningFor}}\t{{.Status}}"'
 abbr -a fn 'find . -name '

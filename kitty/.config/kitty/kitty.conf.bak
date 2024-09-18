@@ -5,8 +5,6 @@ italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
 
-setxkbmap -option caps:escape
-
 font_size 22.0
 
 background_opacity 0.8
@@ -15,4 +13,5 @@ confirm_os_window_close 0
 window_padding_width 6
 
 include ./colors/kanagawa.conf
+# remove in interviews and serious meetings... maybe
 bell_path ./uwu.wav
