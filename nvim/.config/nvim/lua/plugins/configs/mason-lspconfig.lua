@@ -33,7 +33,7 @@ local lsp_servers = {
   },
   sqlls = {},
   gopls = {},
-  tsserver = {},
+  --tsserver = {},
   jsonls = {},
   yamlls = {
     settings = {
