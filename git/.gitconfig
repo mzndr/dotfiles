@@ -7,7 +7,7 @@
 [merge]
   tool = nvim
 [user]
-	email = marius@bam-bam-bam.com
+	email = hello@mzndr.me
 	name = Marius Zander
   useConfigOnly = true
 [push]
