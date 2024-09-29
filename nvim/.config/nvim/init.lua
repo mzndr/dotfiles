@@ -1,4 +1,4 @@
-vim.cmd("clearjumps")
+vim.cmd("clearjumps") -- :/
 
 require("settings")
 require("keymaps")
