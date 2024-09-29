@@ -10,6 +10,7 @@
 	email = hello@mzndr.me
 	name = Marius Zander
   useConfigOnly = true
+  signingKey = ~/.ssh/git.pub
 [push]
   autoSetupRemote = true
 [pull]
@@ -20,5 +21,10 @@
   patch = true
 [commit]
   verbose = true
+  gpgsign = true
 [remote "origin"]
   prune = true
+[tag]
+  gpgsign = true
+[gpg]
+  format = ssh
