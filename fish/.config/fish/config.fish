@@ -1,3 +1,4 @@
+xmodmap ~/.Xmodmap
 if not set -q DISPLAY 
   startx
 end
@@ -5,4 +6,3 @@ end
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 fish_vi_key_bindings
-fnm env | source 
