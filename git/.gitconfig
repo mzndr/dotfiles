@@ -11,6 +11,8 @@
 	name = Marius Zander
   useConfigOnly = true
   signingKey = ~/.ssh/git.pub
+[checkout]
+  fetch = true
 [push]
   autoSetupRemote = true
 [pull]
