@@ -7,12 +7,13 @@ abbr -a ll  "exa -la --git --group-directories-first"
 abbr -a cat "bat"
 abbr -a q   "exit"
 abbr -a dcup "docker compose up -d && docker compose logs -f"
-abbr -a ts 'TMUX_SESSION_DIR=$(pwd) tmux new -s $(basename $TMUX_SESSION_DIR)'
 
+abbr -a ts 'TMUX_SESSION_DIR=$(pwd) tmux new -s $(basename $TMUX_SESSION_DIR)'
 abbr -a ta 'tmux attach'
+
 abbr -a cw 'cargo watch - '
 abbr -a v 'nvim'
-abbr -a t "exa -la --git --git-ignore --group-directories-first --tree"
+abbr -a t "exa -a --git --git-ignore --group-directories-first --tree"
 abbr -a dps 'docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.RunningFor}}\t{{.Status}}"'
 abbr -a dcps 'docker compose ps --format "table {{.ID}}\t{{.Name}}\t{{.Ports}}\t{{.RunningFor}}\t{{.Status}}"'
 abbr -a fn 'find . -name '
