@@ -1,4 +1,3 @@
-xmodmap ~/.Xmodmap
 if not set -q DISPLAY 
   startx
 end
