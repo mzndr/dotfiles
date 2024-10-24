@@ -32,3 +32,6 @@
   format = ssh
 [gpg "ssh"]
   allowedSignersFile = ~/.ssh/allowed_signers
+
+[includeIf "gitdir:/home/marius/hcloud/"]
+    path = /home/marius/dotfiles/git/.gitconfig-hcloud
