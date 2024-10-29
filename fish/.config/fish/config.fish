@@ -4,8 +4,6 @@ end
 
 fish_add_path ~/go/bin
 
-kubectl config unset current-context # Try to avoid fucksie wucksies by unsetting it on session start
-
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 fish_vi_key_bindings

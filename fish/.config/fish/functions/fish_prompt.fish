@@ -1,3 +1,8 @@
+function kube_ctx
+  set -l ctx (kubectl config current-context 2>/dev/null)
+  echo " ["$ctx"]"
+end
+
 function fish_prompt --description 'Write out the prompt'
     set -l last_status $status
     set -l normal (set_color normal)
@@ -25,6 +30,6 @@ function fish_prompt --description 'Write out the prompt'
         set prompt_status $status_color "[" $last_status "]" $normal
     end
 
-    echo -s (prompt_login) ' ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' ' $prompt_status
+    echo -s (prompt_login) $cwd_color (prompt_pwd) $vcs_color (kube_ctx) (fish_vcs_prompt) $normal $prompt_status
     echo -n -s $status_color $suffix ' ' $normal
 end
