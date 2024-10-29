@@ -33,3 +33,4 @@ abbr -a duf 'duf -hide loops'
 
 abbr -a icat 'kitten icat '
 
+abbr -a k 'kubectl'
