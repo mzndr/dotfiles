@@ -31,6 +31,7 @@ abbr -a glg 'git log --oneline --graph'
 abbr -a c 'clear'
 abbr -a duf 'duf -hide loops'
 
-abbr -a icat 'kitten icat '
+abbr -a icat 'kitten icat'
 
 abbr -a k 'kubectl'
+abbr -a kc 'kubectl config use-context'
