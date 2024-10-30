@@ -28,7 +28,4 @@ set('n', '<space>e', vim.diagnostic.open_float)
 set('n', '<C-l>', vim.diagnostic.goto_next)
 set('n', '<C-h>', vim.diagnostic.goto_prev)
 set("n", "<Leader>K", vim.diagnostic.open_float)
-<<<<<<< HEAD
-=======
 set("x", "<Leader>o", "\"_dP")
->>>>>>> 10c6e97 (update)
