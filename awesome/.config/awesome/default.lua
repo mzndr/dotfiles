@@ -173,11 +173,12 @@ awful.screen.connect_for_each_screen(function(s)
     -- }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ 
+    s.mywibox = awful.wibar({
       height = 24,
       opacity = 0.7,
-      position = "top", 
-      screen = s 
+      position = "top",
+      visible = false,
+      screen = s
     })
 
     -- -- Add widgets to the wibox
@@ -311,7 +312,11 @@ clientkeys = gears.table.join(
     awful.key({ modkey,           }, "f",
         function (c)
             c.fullscreen = not c.fullscreen
-            c:raise()
+            awful.screen.connect_for_each_screen(function(s)
+            end)
+
+
+
         end,
         {description = "toggle fullscreen", group = "client"}),
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end,
@@ -472,8 +477,8 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
+    { rule = { class = "Firefox" },
+      properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 
@@ -513,10 +518,10 @@ client.connect_signal("request::titlebars", function(c)
             layout  = wibox.layout.fixed.horizontal
         },
         { -- Middle
-            { -- Title
-                align  = "center",
-                widget = awful.titlebar.widget.titlewidget(c)
-            },
+    --       { -- Title
+    --           align  = "center",
+    --           widget = awful.titlebar.widget.titlewidget(c)
+    --       },
             buttons = buttons,
             layout  = wibox.layout.flex.horizontal
         },

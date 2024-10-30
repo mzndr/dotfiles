@@ -7,7 +7,7 @@ local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/";
-local bg_image = "~/wallpapers/cyber/wallhaven2.jpg";
+local bg_image = "~/wallpapers/cyber/android_head.jpg";
 
 local theme = {}
 

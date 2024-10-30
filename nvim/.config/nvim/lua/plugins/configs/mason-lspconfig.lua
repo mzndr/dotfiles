@@ -4,18 +4,32 @@ local lsp_servers = {
   cssls = {},
   dockerls = {},
   html = {},
+
   lua_ls = {
     settings = {
       Lua = {
-        runtime = {
-          version = "LuaJIT",
+        workspace = {
+          checkThirdParty = false,
+          library = vim.tbl_deep_extend('force', vim.api.nvim_get_runtime_file("", true), {
+            "/usr/share/awesome/lib",
+            "/usr/share/lua",
+          }),
         },
         diagnostics = {
-          globals = { "vim" },
+          globals = {
+            "awesome",
+            "awful",
+            "client",
+            "screen",
+            "tag",
+            "root",
+            "vim",
+          },
         },
-      },
-    },
-    formatter = true,
+        runtime = { version = 'LuaJIT' },
+        formatter = true,
+      }
+    }
   },
   marksman = {},
   rust_analyzer = {
