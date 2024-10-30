@@ -1,9 +1,9 @@
 local awful = require("awful")
 
-autorunApps = 
-{ 
+AUTORUN_APPS =
+{
   'picom',
 }
-for app = 1, #autorunApps do
-  awful.util.spawn(autorunApps[app])
+for app = 1, #AUTORUN_APPS do
+  awful.util.spawn(AUTORUN_APPS[app])
 end
