@@ -177,10 +177,10 @@ awful.screen.connect_for_each_screen(function(s)
 
   -- Create the wibox
   s.mywibox = awful.wibar({
-    height = 24,
+    height = 25,
     opacity = 0.7,
     position = "top",
-    visible = true,
+    visible = false,
     screen = s
   })
 
@@ -211,6 +211,11 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 GLOBAL_KEYS = gears.table.join(
+  awful.key({ MODKEY, }, "b", function ()
+    local s = awful.screen.focused()
+    s.mywibox.visible = not s.mywibox.visible
+  end,
+    { description = "toggle bar", group = "wibox" }),
   awful.key({ MODKEY, }, "s", hotkeys_popup.show_help,
     { description = "show help", group = "awesome" }),
   awful.key({ MODKEY, }, "Left", awful.tag.viewprev,
