@@ -4,7 +4,6 @@ local lsp_servers = {
   cssls = {},
   dockerls = {},
   html = {},
-
   lua_ls = {
     settings = {
       Lua = {
@@ -46,7 +45,15 @@ local lsp_servers = {
     formatter = true,
   },
   sqlls = {},
-  gopls = {},
+  gopls = {
+    settings = {
+      gopls = {
+        hints = {
+          parameterNames = true,
+        }
+      }
+    }
+  },
   --tsserver = {},
   jsonls = {},
   yamlls = {
@@ -66,9 +73,18 @@ mason_lspconfig.setup({
 
 local capabilities = require("cmp_nvim_lsp")
     .default_capabilities(vim.lsp.protocol.make_client_capabilities())
-local on_attach = function(_, buffer)
+local on_attach = function(client, buffer)
+
+  if client.server_capabilities.inlayHintProvider then
+      vim.lsp.inlay_hint.enable(true, { buffer })
+  end
+
   local opts = { buffer = buffer }
   local set = vim.keymap.set
+  set('n', '<space>I', function ()
+    local enabled = vim.lsp.inlay_hint.is_enabled({ buffer });
+    vim.lsp.inlay_hint.enable(not enabled, { buffer })
+  end, opts)
   set('n', '<space>q', vim.diagnostic.setloclist)
   set("n", "cr", vim.lsp.buf.rename, opts)
   -- set("n", "<Leader>lS", vim.lsp.buf.signature_help, opts)
