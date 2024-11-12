@@ -1,4 +1,4 @@
-require("lualine").setup{
+require("lualine").setup({
 	options = {
 		icons_enabled = false,
 		theme = "auto",
@@ -26,12 +26,12 @@ require("lualine").setup{
 	sections = {
 		lualine_a = { "branch" },
 		lualine_b = {
-      {
-        "filename",
-        file_status = false, -- displays file status (readonly status, modified status)
-        path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
-      }
-    },
+			{
+				"filename",
+				file_status = false, -- displays file status (readonly status, modified status)
+				path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
+			},
+		},
 		lualine_c = {},
 		lualine_x = {},
 		lualine_z = {},
@@ -48,4 +48,4 @@ require("lualine").setup{
 	winbar = {},
 	inactive_winbar = {},
 	extensions = {},
-}
+})

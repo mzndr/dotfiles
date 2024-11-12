@@ -25,7 +25,7 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 			NormalFloat = { bg = theme.ui.bg_p1 },
 			LineNr = { bg = "NONE" },
 			SignColumn = { bg = "NONE" },
-      StatusLine = { bg = "NONE" },
+			StatusLine = { bg = "NONE" },
 			TelescopeTitle = {
 				fg = theme.ui.special,
 				bold = true,
@@ -67,4 +67,4 @@ require("kanagawa").setup({ -- enable undercurls -- special highlight for the re
 
 -- setup must be called before loading
 vim.cmd("colorscheme kanagawa")
-vim.cmd("hi highlightedyankregion guibg=#e82424");
+vim.cmd("hi highlightedyankregion guibg=#e82424")
