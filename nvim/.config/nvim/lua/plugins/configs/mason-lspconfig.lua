@@ -51,7 +51,21 @@ local lsp_servers = {
 				hints = {
 					parameterNames = true,
 				},
-			},
+        experimentalPostfixCompletions = false,
+        staticcheck = true,
+        -- See:
+        --   - https://github.com/golang/tools/blob/master/gopls/doc/analyzers.md
+        --   - https://staticcheck.dev/docs/checks/
+        analyses = {
+          SA9003 = true,
+          ST1003 = true,
+          ST1016 = true,
+          ST1020 = true,
+          ST1021 = true,
+          ST1022 = true,
+          ST1023 = true,
+        },
+      },
 		},
 	},
 	--tsserver = {},
@@ -72,22 +86,27 @@ mason_lspconfig.setup({
 })
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-local on_attach = function(client, buffer)
+local on_attach = function(_, buffer)
 	local opts = { buffer = buffer }
 	local set = vim.keymap.set
-	set("n", "<space>I", function()
-		if client.server_capabilities.inlayHintProvider then
+
+  vim.api.nvim_buf_create_user_command(buffer, "ToggleInlayHints", function (_)
 			local enabled = vim.lsp.inlay_hint.is_enabled({ buffer })
 			vim.lsp.inlay_hint.enable(not enabled, { buffer })
-		end
-	end, opts)
-	set("n", "<space>D", function()
+  end, {})
+
+  vim.api.nvim_buf_create_user_command(buffer, "ToggleDiagnostics", function (_)
     local enabled = vim.diagnostic.is_enabled({ buffer })
     vim.diagnostic.enable(not enabled, { buffer })
-	end, opts)
+  end, {})
+
+  vim.api.nvim_buf_create_user_command(buffer, "Symbols", function (_)
+      vim.lsp.buf.document_symbol()
+  end, {})
+
 	set("n", "<space>q", vim.diagnostic.setloclist)
 	set("n", "cr", vim.lsp.buf.rename, opts)
-	set("n", "<leader>ls", vim.lsp.buf.document_symbol, opts)
+	set("n", "<leader>Ls", vim.lsp.buf.document_symbol, opts)
 	-- set("n", "<Leader>lS", vim.lsp.buf.signature_help, opts)
 	set({ "n", "v" }, "K", vim.lsp.buf.hover, opts)
 	-- set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action, opts)
