@@ -109,7 +109,7 @@ local on_attach = function(_, buffer)
 	set("n", "<leader>Ls", vim.lsp.buf.document_symbol, opts)
 	-- set("n", "<Leader>lS", vim.lsp.buf.signature_help, opts)
 	set({ "n", "v" }, "K", vim.lsp.buf.hover, opts)
-	-- set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action, opts)
+	set({ "n", "v" }, "<Leader>A", vim.lsp.buf.code_action, opts)
 	set({ "n", "v" }, "<Leader>d", function()
 		vim.lsp.buf.format({
 			async = true,
