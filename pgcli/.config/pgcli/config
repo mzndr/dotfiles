@@ -125,7 +125,7 @@ show_bottom_toolbar = False
 # sql-update-1, sql-update-2 (formatter with sql-* prefix can format query
 # output to executable insertion or updating sql).
 # Recommended: psql, fancy_grid and grid.
-table_format = psql
+table_format = simple
 
 # Syntax Style. Possible values: manni, igor, xcode, vim, autumn, vs, rrt,
 # native, perldoc, borland, tango, emacs, friendly, monokai, paraiso-dark,
