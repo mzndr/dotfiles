@@ -24,7 +24,12 @@ require("lualine").setup({
 		},
 	},
 	sections = {
-		lualine_a = { "branch" },
+		lualine_a = {
+      {
+        "branch" ,
+        fmt =  function(str) return LimitStrLength(str, 20) end
+      }
+    },
 		lualine_b = {
 			{
 				"filename",
@@ -49,3 +54,11 @@ require("lualine").setup({
 	inactive_winbar = {},
 	extensions = {},
 })
+
+function LimitStrLength(str, len)
+  if string.len(str) > len then
+    return string.sub(str,1,len) .. '…'
+  else
+    return str
+  end
+end
