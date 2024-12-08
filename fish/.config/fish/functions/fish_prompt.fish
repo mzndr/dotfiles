@@ -1,6 +1,9 @@
 function kube_ctx
-  set -l ctx (kubectl config current-context 2>/dev/null)
-  echo " ["$ctx"]"
+  if type -q kubectl 
+    set -l ctx (kubectl config current-context 2>/dev/null)
+    echo " ["$ctx"]"
+  end
+  echo ""
 end
 
 function fish_prompt --description 'Write out the prompt'
