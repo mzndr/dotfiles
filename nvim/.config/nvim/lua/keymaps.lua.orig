@@ -3,8 +3,6 @@ local set = vim.keymap.set
 vim.g.mapleader = " "
 
 set("i", "jj", "<Esc>")
-set("n", "n", "nzzzv")
-set("n", "N", "Nzzzv")
 
 set("n", "<leader>p", '"+p')
 set("n", "<leader>P", '"+P')
