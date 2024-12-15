@@ -8,7 +8,7 @@ set -x EDITOR "nvim"
 set -x GOPROXY "https://goproxy.your-cloud.host|https://riverqueue.com/goproxy|https://proxy.golang.org|direct"
 set -x GONOSUMDB "git.hetzner.company,riverqueue.com/riverpro"
 set -x GOPRIVATE "git.hetzner.company"
-
+set -x GTK_THEME "Adwaita:dark"
 if test -e ~/tokens/glpat.token
   set -x GLPAT (cat ~/tokens/glpat.token)
 end
