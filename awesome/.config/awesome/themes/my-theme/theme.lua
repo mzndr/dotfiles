@@ -4,14 +4,16 @@
 
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
+local beautiful = require("beautiful")
+local naughty = require("naughty")
+
 local dpi = xresources.apply_dpi
-local gfs = require("gears.filesystem")
 local themes_path = "~/.config/awesome/themes/"
 local bg_image = "~/wallpapers/waneella/city_night.png"
 
 local theme = {}
 
-theme.font = "sans 10"
+theme.font = "sans 13"
 
 theme.bg_normal = "#3F3F58"
 theme.bg_focus = "#535d6c"
@@ -24,8 +26,8 @@ theme.fg_focus = "#ffffff"
 theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
-theme.useless_gap = dpi(0)
-theme.border_width = dpi(3)
+theme.useless_gap = dpi(3)
+theme.border_width = dpi(4)
 theme.border_normal = "#303050"
 theme.border_focus = "#5F5F88"
 theme.border_marked = "#91231c"
@@ -40,6 +42,10 @@ theme.border_marked = "#91231c"
 -- mouse_finder_[color|timeout|animate_timeout|radius|factor]
 -- prompt_[fg|bg|fg_cursor|bg_cursor|font]
 -- hotkeys_[bg|fg|border_width|border_color|shape|opacity|modifiers_fg|label_bg|label_fg|group_margin|font|description_font]
+theme.hotkeys_modifiers_fg = "#c9c9c9"
+theme.hotkeys_font = theme.font
+theme.hotkeys_description_font = theme.font
+theme.hotkeys_group_margin = dpi(4)
 -- Example:
 --theme.taglist_bg_focus = "#ff0000"
 
@@ -53,6 +59,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_
 -- notification_[bg|fg]
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
+beautiful.notification_border_width = dpi(3)
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
