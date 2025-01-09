@@ -44,7 +44,9 @@ local lsp_servers = {
     },
     formatter = true,
   },
-  sqlls = {},
+  sqlls = {
+    formatter = true,
+  },
   gopls = {
     settings = {
       gopls = {

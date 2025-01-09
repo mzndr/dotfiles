@@ -63,4 +63,6 @@ vim.keymap.set("n", "<Leader>gi", builtin.lsp_implementations)
 vim.keymap.set("n", "<Leader>gs", builtin.lsp_document_symbols)
 vim.keymap.set("n", "<Leader>gS", builtin.lsp_dynamic_workspace_symbols)
 
-vim.keymap.set("n", "<Leader>gl", builtin.git_commits)
+vim.keymap.set("n", "<Leader>gic", builtin.git_commits)
+vim.keymap.set("n", "<Leader>gis", builtin.git_status)
+vim.keymap.set("n", "<Leader>gif", builtin.git_files)
