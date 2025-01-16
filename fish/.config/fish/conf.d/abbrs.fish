@@ -18,7 +18,8 @@ abbr -a dps 'docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.Runni
 abbr -a dcps 'docker compose ps --format "table {{.ID}}\t{{.Name}}\t{{.Ports}}\t{{.RunningFor}}\t{{.Status}}"'
 abbr -a fn 'find . -name '
 abbr -a fzf 'fzf --preview="cat {}"'
-abbr -a fvim 'nvim $(\'fzf --preview="cat {}"\')'
+abbr -a fvim 'nvim (\'fzf --preview="cat {}"\')'
+abbr -a fcd 'cd (dirname (fzf))'
 
 abbr -a gs 'git status --short '
 abbr -a gd 'git diff'
@@ -26,6 +27,7 @@ abbr -a gp 'git push'
 abbr -a gc 'git commit'
 abbr -a gca 'git commit --amend'
 abbr -a gl 'git log --oneline'
+abbr -a glh 'git log --oneline -n 10'
 abbr -a glg 'git log --oneline --graph'
 
 abbr -a c 'clear'
