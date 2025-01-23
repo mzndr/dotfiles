@@ -73,6 +73,7 @@ local lsp_servers = {
   --tsserver = {},
   jsonls = {},
   yamlls = {
+    formatter = true,
     settings = {
       yaml = {
         keyOrdering = false,
