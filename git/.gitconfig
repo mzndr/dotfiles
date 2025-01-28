@@ -6,6 +6,7 @@
   prompt = false
 [merge]
   tool = nvim
+  conflictstyle = zdiff3
 [user]
 	email = hello@mzndr.me
 	name = Marius Zander
@@ -32,6 +33,16 @@
   format = ssh
 [gpg "ssh"]
   allowedSignersFile = ~/.ssh/allowed_signers
+[core]
+    #pager = delta
+[interactive]
+    #diffFilter = delta --color-only
+#[delta]
+#    navigate = true  # use n and N to move between diff sections
+#    dark = true      # or light = true, or omit for auto-detection
+#    line-numbers = true
+#    #side-by-side = true
 
 [includeIf "gitdir:/home/marius/hcloud/"]
     path = /home/marius/dotfiles/git/.gitconfig-hcloud
+
