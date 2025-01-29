@@ -7,7 +7,7 @@ set.expandtab = true
 set.autoread = true
 set.rnu = true
 set.signcolumn = "no"
---set.colorcolumn = "0"
+set.colorcolumn = "120"
 set.history = 1000
 set.conceallevel = 0
 set.scrolloff = 10
@@ -20,6 +20,6 @@ vim.g.netrw_altfile = 1
 vim.g.netrw_keepj = ""
 
 vim.diagnostic.config({
-	severity_sort = true,
-	virtual_text = { spacing = 0, prefix = "" },
+  severity_sort = true,
+  virtual_text = { spacing = 0, prefix = "" },
 })
