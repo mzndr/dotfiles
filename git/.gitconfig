@@ -6,7 +6,6 @@
   prompt = false
 [merge]
   tool = nvim
-  conflictstyle = zdiff3
 [user]
 	email = hello@mzndr.me
 	name = Marius Zander

@@ -43,20 +43,34 @@ packer.startup(function(use)
   })
 
   -- *** Telescope ***
-  use({
-    "ThePrimeagen/harpoon",
-    config = function()
-      require("plugins/configs/charpoon")
-    end,
-  })
+  --use({
+  --  "ThePrimeagen/harpoon",
+  --  config = function()
+  --    require("plugins/configs/charpoon")
+  --  end,
+  --})
+  --
+  use "nvim-lua/plenary.nvim"
+
   use({
     "nvim-telescope/telescope.nvim",
     branch = "0.1.x",
     requires = { { "nvim-lua/plenary.nvim" } },
-    after = { "nvim-treesitter", "harpoon" },
+    after = { "nvim-treesitter" },
+
     config = function()
       require("plugins/configs/telescope")
     end,
+  })
+
+  use({
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    config = function()
+      require("plugins/configs/harpoon2")
+    end,
+    after = { "telescope.nvim" },
+    requires = { { "nvim-lua/plenary.nvim" }, { "nvim-telescope/telescope.nvim" } },
   })
 
   -- *** LSP ***
