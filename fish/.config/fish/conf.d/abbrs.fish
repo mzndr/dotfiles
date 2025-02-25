@@ -13,14 +13,18 @@ abbr -a fn 'find . -name '
 abbr -a fvim 'nvim (\'fzf --preview="cat {}"\')'
 abbr -a fzf 'fzf --preview="cat {}"'
 abbr -a icat 'kitten icat'
-abbr -a k 'kubectl'
-abbr -a kc 'kubectl config use-context'
 abbr -a ll  "exa -la --git --group-directories-first"
 abbr -a q   "exit"
 abbr -a t "exa -a --git --git-ignore --group-directories-first --tree"
 abbr -a ta 'tmux attach'
 abbr -a ts 'TMUX_SESSION_DIR=$(pwd) tmux new -s $(basename $TMUX_SESSION_DIR)'
 abbr -a v 'nvim'
+
+# kubectl
+abbr -a k 'kubectl'
+abbr -a kc 'kubectl config use-context'
+abbr -a kl  'kubectl logs'
+abbr -a kd  'kubectl describe'
 
 # Git
 abbr -a gc  'git commit'
@@ -30,8 +34,13 @@ abbr -a gl  'git log --oneline'
 abbr -a glg 'git log --oneline --graph'
 abbr -a glh 'git log --oneline -n 10'
 abbr -a gp  'git push'
+abbr -a gpf  'git push --force-with-lease'
+abbr -a gpm  'git checkout main && git pull && git checkout -'
 abbr -a gr  'git rebase'
 abbr -a gri 'git rebase -i'
 abbr -a gra 'git rebase --abort'
 abbr -a grc 'git rebase --continue'
-abbr -a gs  'git status --short '
+abbr -a gs  'git status --short'
+
+abbr -a filter-garbo 'rg --line-buffered -v \'^(\{|App)\'' 
+

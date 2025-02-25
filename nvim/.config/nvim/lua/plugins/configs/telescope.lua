@@ -40,6 +40,10 @@ telescope.setup({
         "!*.jpeg",
         "--glob",
         "!*.jpg",
+        "--glob",
+        "!mock/",
+        "--glob",
+        "!mocks/",
       },
     },
     live_grep = {
@@ -56,6 +60,7 @@ telescope.setup({
         "!*.jpeg",
         "!*/package-lock.json",
         "!*/pnpm-lock.yaml",
+        "!mocks/",
       },
     },
   },
